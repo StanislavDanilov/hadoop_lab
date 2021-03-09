@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "#************************************************#"
+echo "#                     start                      #"
+echo "#           autor: Danilov Stanislav             #"
+echo "#                  Voronina Ekaterina            #"
+echo "#                 16 02, 2020                    #"
+echo "#                                                #"
+echo "#************************************************#"
+if [ -f /usr/local/Cellar/hadoop/3.3.0/sbin/start-dfs.sh ]; then
+	bash /usr/local/Cellar/hadoop/3.3.0/sbin/start-dfs.sh
+	bash /usr/local/Cellar/hadoop/3.3.0/sbin/start-yarn.sh
+	echo "#************************************************#"
+	echo "#                  start complite                #"
+	echo "#                   port: 9870                   #"
+	echo "#               hostname: localhost              #"
+	echo "#************************************************#"
+fi
+	echo "Check Version Hadoop.Command: Hadoop verion"
+
